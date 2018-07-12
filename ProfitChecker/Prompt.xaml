@@ -1,0 +1,17 @@
+﻿<Window x:Class="ProfitChecker.Prompt"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProfitChecker"
+        mc:Ignorable="d"
+        Title="Add an Item" Height="179.412" Width="400">
+    <Grid Margin="0,0,2,1">
+        <Button x:Name="submitbtn" Content="Submit" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="370" Height="35" Click="Button_Click"/>
+        <Label Content="Item ID:" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="itemid" HorizontalAlignment="Left" Height="23" Margin="129,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" ToolTip="You can get the ID from theunderminejournal.com"/>
+        <Label Content="Max Price for Profit:" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="maxprof" HorizontalAlignment="Left" Height="23" Margin="129,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" ToolTip="If the item sells for under this value, it will show as profitable"/>
+
+    </Grid>
+</Window>

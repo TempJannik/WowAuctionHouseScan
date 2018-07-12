@@ -1,0 +1,18 @@
+﻿<Window x:Class="ProfitChecker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProfitChecker"
+        mc:Ignorable="d"
+        Title="Auction House Monitor" Height="455.042" Width="800" Loaded="Window_Loaded">
+    <Grid x:Name="mainGrid">
+        <Button Content="Add Item" HorizontalAlignment="Left" Height="26" Margin="530,388,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Height="26" Margin="655,388,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_2"/>
+        <Button x:Name="savebutton" Content="Save" HorizontalAlignment="Left" Height="26" Margin="405,388,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_1"/>
+        <TextBlock x:Name="textconsole" HorizontalAlignment="Left" Margin="586,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="293" Width="189"/>
+        <Label x:Name="update" Content="Last AH update: " HorizontalAlignment="Left" Margin="586,335,0,0" VerticalAlignment="Top" Width="189"/>
+        <Label x:Name="nextupdate" Content="Next AH update: " HorizontalAlignment="Left" Margin="586,357,0,0" VerticalAlignment="Top" Width="189"/>
+        <Button Content="X" HorizontalAlignment="Left" Margin="762,0,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Red" Click="Button_Click_3"/>
+    </Grid>
+</Window>
